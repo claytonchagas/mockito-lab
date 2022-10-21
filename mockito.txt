@@ -1,0 +1,64 @@
+1.Introdução ao Mockito
+2.Mockando objetos
+3.Espiando objetos
+4.Capturando argumentos
+5.Manipulando retornos
+6.Mockando métodos estáticos
+7.Conclusão
+
+1.Introdução ao Mockito
+--Objetivos:
+-Entender o conceito de Mocks
+-Configurar um projeto utilizando Mockito
+-Conhecer um pouco mais sobre o Mockito
+
+--O que são Mock Tests
+-Cria independência das camadas dos testes, com o intuito de simplificar o teste
+
+--Cenário
+-App que se comunica com API, BD, etc
+-solução: Mockito (com JUnit) 
+
+https://mvnrepository.com/
+
+Mockito Core
+
+Mockito JUnit Jupiter
+
+https://giuliana-bezerra.medium.com/criando-um-projeto-java-maven-no-eclipse-cf7326d4db37
+
+https://www.youtube.com/watch?v=OPcJTYldUmU
+
+************************************************
+package mocktest.mockjava;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+@ExtendWith(MockitoExtension.class)
+public class ListaTeste {
+	
+	@Mock
+	private List<String> letras;
+	
+	@Test
+	void adicionarItemNaLista() {
+		Mockito.when(letras.get(0)).thenReturn("B");
+		
+		Assertions.assertEquals("B", letras.get(0));	
+	}
+}
+************************************************
+https://martinfowler.com/articles/mocksArentStubs.html
+https://site.mockito.org/
+https://www.baeldung.com/mockito-annotations
+************************************************
+COMO MOCKAR OBJETOS:
+
+
