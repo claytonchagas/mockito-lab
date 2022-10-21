@@ -61,4 +61,8 @@ https://www.baeldung.com/mockito-annotations
 ************************************************
 COMO MOCKAR OBJETOS:
 
+Codes github
 
+Refs:
+www.vogella.com/tutorials/Mockito/article.html
+www.baeldung.com/mockito-mock-methods
