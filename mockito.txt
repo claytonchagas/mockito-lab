@@ -2,6 +2,8 @@ https://docs.google.com/presentation/d/1CMt_YrDpvyPDVLzcSjA8F4UXKa3F9Dlo/edit
 
 https://github.com/willyancaetano/mockito-exemplos
 
+https://www.youtube.com/watch?v=OPcJTYldUmU   (Como fazer em Java: Um novo projeto Maven! No Eclipse! Simples e direto!)
+
 1.Introdução ao Mockito
 2.Mockando objetos
 3.Espiando objetos
